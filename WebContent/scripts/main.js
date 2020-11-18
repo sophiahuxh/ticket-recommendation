@@ -12,6 +12,14 @@
      * Initialize
      */
     function init() {
+	    var array1 = ['a', 'b', 'c'];
+            array1.forEach(element => console.log(element));
+	    
+	    
+	    _.forEach({ 'a': 1, 'b': 2 }, function(value, key) {
+	      console.log(key);
+	    });
+	    
 		// Register event listeners
 		$('login-btn').addEventListener('click', login);
 		$('nearby-btn').addEventListener('click', loadNearbyItems);
